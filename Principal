@@ -1,0 +1,49 @@
+/**
+ *
+ * @author monto
+ */
+public class Principal {
+    
+    public static void main(String[] args){
+        
+        
+        //<h2>No sabemos crear arraylist por tanto lo hemos realizado así</h2>
+        Cliente [] listaC= new Cliente[4];
+        Proveedor [] listaP= new Proveedor[3];
+        Articulo [] listaA= new Articulo[2];
+                
+        Cliente cliente1= (Cliente) listaC[0];
+        Cliente cliente2= (Cliente) listaC[1];
+        Cliente cliente3= (Cliente) listaC[2];
+        Cliente cliente4= (Cliente) listaC[3];
+        cliente1.DarAltaCliente();
+        cliente2.DarAltaCliente();
+        cliente3.DarAltaCliente();
+        cliente4.DarAltaCliente();
+        
+        Proveedor prov1= (Proveedor) listaP[0]; 
+        Proveedor prov2= (Proveedor) listaP[1]; 
+        Proveedor prov3= (Proveedor) listaP[2]; 
+        prov1.DarAlta();
+        prov2.DarAlta();
+        prov3.DarAlta();
+        
+        Articulo art1= (Articulo) listaA[0];
+        Articulo art2= (Articulo) listaA[1];
+        art1.darAlta();
+        art2.darAlta();
+        
+        //<h3>voy a decir los datos de cada uno mediante el toString() implícito de cada clase</h3>
+        art1.toString();
+        art2.toString();
+        prov1.toString();
+        prov2.toString();
+        prov3.toString();
+        cliente1.toString();
+        cliente2.toString();
+        cliente3.toString();
+        cliente4.toString();
+        
+    }
+    
+}
