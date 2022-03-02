@@ -10,7 +10,7 @@
 public class Proveedor extends Persona{
     public Proveedor() {
     }
-
+            // probando a volver a subirlo
     public Proveedor(String nombre, String direccion, String telefono) {
         super(nombre, direccion, telefono);
     }
