@@ -8,6 +8,35 @@ public class Articulo
 	String descripcion;
 	double precio;
 	/*
+	 * Getters y Setters
+	 */
+	//Getters
+	public String getCodigo()
+	{
+		return codigo;
+	}
+	public String getDescripcion()
+	{
+		return descripcion;
+	}
+	public double getPrecio()
+	{
+		return precio;
+	}
+	//Setters
+	public void setCodigo(String codigo)
+	{
+		this.codigo=codigo;
+	}
+	public void setDescripcion(String descripcion)
+	{
+		this.descripcion=descripcion;
+	}
+	public void setPrecio(double precio)
+	{
+		this.precio=precio;
+	}
+	/*
 	 * Constructores
 	 */
 	public Articulo()
