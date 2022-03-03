@@ -10,6 +10,11 @@ public class Principal {
 	
 	static Scanner sc=new Scanner(System.in);
 	
+	/**
+	 * Funcion para pedir cadena de caracteres
+	 * @param peticion String mensaje de peticion
+	 * @return String cadena
+	 */
 	public static String pedirCadena(String peticion)
 	{
 		System.out.print(peticion);
@@ -17,6 +22,10 @@ public class Principal {
 		return cadena;
 	}
 	
+	/**
+	 * Funcion para pedir el precio de un producto
+	 * @return String precio
+	 */
 	public static String pedirPrecio()
 	{
 		System.out.print("Introduce el precio del producto: ");
@@ -24,6 +33,10 @@ public class Principal {
 		return  precio;
 	}
 	
+	/**
+	 * Funcion para indicar cual va a ser el tipo de cliente
+	 * @return TipoCliente
+	 */
 	public static TipoCliente tipo()
 	{
 		System.out.print("Elige el tipo de cliente: VIP|MOROSO|NUEVO|POTENCIAL --> ");
@@ -48,21 +61,31 @@ public class Principal {
 
 	public static void main(String[] args) 
 	{
+		/**
+		 * Creacion de la lista de articulos
+		 */
 		ArrayList<Articulo>articulos=new ArrayList<Articulo>();
 		articulos.add(new Articulo(pedirCadena("Introduce el codigo del articulo 1: "),pedirCadena("Introduce la descripcion: "),pedirPrecio()));
 		articulos.add(new Articulo(pedirCadena("Introduce el codigo del articulo 2: "),pedirCadena("Introduce la descripcion: "),pedirPrecio()));
-		
+		/**
+		 * Creacion de la lista de clientes
+		 */
 		ArrayList<Cliente>clientes=new ArrayList<Cliente>();
 		clientes.add(new Cliente(pedirCadena("Introduce el nombre del cliente 1: "),pedirCadena("Introduce la direccion: "),pedirCadena("Introduce el numero de telefono: "),tipo()));
 		clientes.add(new Cliente(pedirCadena("Introduce el nombre del cliente 2: "),pedirCadena("Introduce la direccion: "),pedirCadena("Introduce el numero de telefono: "),tipo()));
 		clientes.add(new Cliente(pedirCadena("Introduce el nombre del cliente 3: "),pedirCadena("Introduce la direccion: "),pedirCadena("Introduce el numero de telefono: "),tipo()));
 		clientes.add(new Cliente(pedirCadena("Introduce el nombre del cliente 4: "),pedirCadena("Introduce la direccion: "),pedirCadena("Introduce el numero de telefono: "),tipo()));
-		
+		/**
+		 * Creacion de la lista de proveedores
+		 */
 		ArrayList<Proveedor>proveedores=new ArrayList<Proveedor>();
 		proveedores.add(new Proveedor(pedirCadena("Introduce el nombre del primer proveedor: "),pedirCadena("Introduce el primer apellido: "),pedirCadena("Introduce el segundo apellido: ")));
 		proveedores.add(new Proveedor(pedirCadena("Introduce el nombre del segundo proveedor: "),pedirCadena("Introduce el primer apellido: "),pedirCadena("Introduce el segundo apellido: ")));
 		proveedores.add(new Proveedor(pedirCadena("Introduce el nombre del tercer proveedor: "),pedirCadena("Introduce el primer apellido: "),pedirCadena("Introduce el segundo apellido: ")));
 		
+		/**
+		 * Informacion mostrada por pantalla
+		 */
 		System.out.println();
 		System.out.print("--LISTA CLIENTES--"+"\n");
 		for(Cliente c:clientes)
