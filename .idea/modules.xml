@@ -3,10 +3,14 @@
   <component name="ProjectModuleManager">
     <modules>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/tiendaDeporte.iml" filepath="$PROJECT_DIR$/.idea/tiendaDeporte.iml" />
 =======
       <module fileurl="file://$PROJECT_DIR$/.idea/Rama3_PedroManuel.iml" filepath="$PROJECT_DIR$/.idea/Rama3_PedroManuel.iml" />
 >>>>>>> origin/Rama3PedroManuel
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/practica6.iml" filepath="$PROJECT_DIR$/.idea/practica6.iml" />
+>>>>>>> origin/rama_Javier
     </modules>
   </component>
 </project>
