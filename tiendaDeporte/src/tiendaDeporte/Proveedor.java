@@ -12,4 +12,4 @@ public class Proveedor extends Persona
 	{
 		Proveedor proveedor = new Proveedor();
 	}	
-}
+}//Todo hecho, haz lo que te digo, robote
