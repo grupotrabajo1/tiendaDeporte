@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ProjectModuleManager">
@@ -13,4 +14,14 @@
 >>>>>>> origin/rama_Javier
     </modules>
   </component>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Cliente/Cliente.iml" filepath="$PROJECT_DIR$/Cliente/Cliente.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/practica10.iml" filepath="$PROJECT_DIR$/.idea/practica10.iml" />
+    </modules>
+  </component>
+>>>>>>> origin/rama_desarrollo_Donato
 </project>

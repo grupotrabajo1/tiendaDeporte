@@ -2,9 +2,9 @@ package tiendaDeporte;
 
 public class Articulo{
     private String codigo, descripcion;
-    private double precio;
+    private String precio;
 
-    public Articulo(String codigo, String descripcion, double precio) {
+    public Articulo(String codigo, String descripcion, String precio) {
         this.codigo = codigo;
         this.descripcion = descripcion;
         this.precio = precio;
@@ -13,7 +13,7 @@ public class Articulo{
     public Articulo() {
         codigo = "''";
         descripcion = "''";
-        precio = 0;
+        precio = "0";
     }
 
     /**
@@ -23,7 +23,7 @@ public class Articulo{
      * @param precio double precio del articulo
      */
 
-    public void alta(String codigo, String descripcion, double precio){
+    public void alta(String codigo, String descripcion, String precio){
         this.codigo = codigo;
         this.descripcion = descripcion;
         this.precio = precio;
@@ -60,11 +60,11 @@ public class Articulo{
         this.descripcion = descripcion;
     }
 
-    public double getPrecio() {
+    public String getPrecio() {
         return precio;
     }
 
-    public void setPrecio(double precio) {
+    public void setPrecio(String precio) {
         this.precio = precio;
     }
 }
